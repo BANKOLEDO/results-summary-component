@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Reset margin, padding, and box-sizing for all elements to ensure consistency across different browsers */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define CSS variables for colors to be used throughout the stylesheet */
+:root {
+    /* Primary Colors */
+    --light-red: hsl(0, 100%, 67%);
+    --orangey-yellow: hsl(39, 100%, 56%);
+    --green-teal: hsl(166, 100%, 37%);
+    --cobalt-blue: hsl(234, 85%, 45%);
+    --light-red-transparent: hsla(0, 100%, 67%, 0.07);
+    --orangey-yellow-transparent: hsla(39, 100%, 56%, 0.07);
+    --green-teal-transparent: hsla(166, 100%, 37%, 0.07);
+    --cobalt-blue-transparent: hsla(234, 85%, 45%, 0.07);
+
+    /* Gradient Colors */
+    --light-slate-blue-background: hsl(252, 100%, 67%);
+    --light-royal-blue-background: hsl(241, 81%, 54%);
+    --violet-blue-circle: hsla(256, 72%, 46%, 1);
+    --persian-blue-circle: hsla(241, 72%, 46%, 0);
+
+    /* Neutral Colors */
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+/* Apply font, width, minimum height, and overflow settings to the entire page */
+.entire-page {
+    font-family: 'Hanken Grotesk', sans-serif;
+    width: 100vw;
+    min-height: 100vh;
+    overflow-y: hidden; /* Prevent vertical scrolling */
+}
+
+/* Style for the card container */
+.card-container {
+    width: 100%;
+    min-height: 55rem;
+    background-color: var(--white); /* Set background color */
+}
+
+/* Style for the first card section */
+.card-1 {
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(180deg, var(--violet-blue-circle), var(--light-royal-blue-background)); /* Gradient background */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    border-radius: 0 0 2.3rem 2.3rem; /* Rounded bottom corners */
+}
+
+/* Style for the second card section */
+.card-2 {
+    margin-top: 4rem; /* Top margin */
+    height: 50%;
+}
+
+/* Style for header text */
+.header {
+    margin: 1rem 0 1.5rem 0; /* Vertical margins */
+    font-size: 1.4rem; /* Font size */
+    color: var(--light-lavender); /* Text color */
+}
+
+/* Style for circular element */
+.circle {
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%; /* Make it a circle */
+    background: linear-gradient(180deg, var(--violet-blue-circle) 50%, var(--persian-blue-circle)); /* Gradient background */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    opacity: 0.9; /* Slight transparency */
+    margin: 0 0 2rem 0; /* Bottom margin */
+    box-shadow: 0px 0px 0.4px black; /* Slight shadow */
+}
+
+/* Style for the result text inside the circle */
+.result {
+    font-size: 3.4rem; /* Large font size */
+    color: var(--white); /* White text color */
+}
+
+/* Style for the full result text */
+.full-result {
+    font-weight: 800; /* Bold text */
+    color: var(--light-lavender); /* Light lavender text color */
+    opacity: 0.5; /* Slightly transparent */
+}
+
+/* Style for the remark text */
+.remark {
+    text-align: center; /* Center text */
+    color: var(--white); /* White text color */
+    opacity: 0.9; /* Slight transparency */
+}
+
+/* Style for detailed remark text */
+.remark-details {
+    margin: 1rem 2.3rem 3rem 2rem; /* Margins */
+    text-align: center; /* Center text */
+    font-size: 1.1rem; /* Font size */
+    color: var(--light-lavender); /* Light lavender text color */
+    opacity: 0.7; /* Slight transparency */
+}
+
+/* Style for the summary text */
+.summary {
+    margin-left: 2rem; /* Left margin */
+    color: var(--dark-gray-blue); /* Text color */
+}
+
+/* Style for the statistics container */
+.stats {
+    position: relative; /* For positioning children absolutely */
+    margin: 1rem 2rem; /* Margins */
+    display: flex; /* Flexbox layout */
+    padding: 1rem; /* Padding */
+    border-radius: 0.4rem; /* Rounded corners */
+    align-items: center; /* Center items vertically */
+    box-shadow: 0px 0px 6px black; /* Box shadow */
+}
+
+/* Style for icons inside the stats container */
+.icons {
+    width: 1.5rem; /* Width */
+    height: 1.5rem; /* Height */
+    margin-right: 1rem; /* Right margin */
+}
+
+/* Style for small text */
+.text {
+    font-size: 0.9rem; /* Font size */
+}
+
+/* Style for the score text */
+.score {
+    font-size: 1.1rem; /* Font size */
+    position: absolute; /* Absolute positioning */
+    left: 75%; /* Position it 75% from the left */
+    color: var(--dark-gray-blue); /* Text color */
+}
+
+/* Style for the light score text */
+.light-score {
+    color: var(--dark-gray-blue); /* Text color */
+    opacity: 0.5; /* Slight transparency */
+}
+
+/* Style for the reaction card background color */
+.card_reaction {
+    background: var(--light-red-transparent); /* Transparent light red background */
+}
+
+/* Style for the reaction text color */
+.reaction {
+    color: var(--light-red); /* Light red text color */
+}
+
+/* Style for the memory card background color */
+.card_memory {
+    background: var(--orangey-yellow-transparent); /* Transparent orangey yellow background */
+}
+
+/* Style for the memory text color */
+.memory {
+    color: var(--orangey-yellow); /* Orangey yellow text color */
+}
+
+/* Style for the verbal card background color */
+.card_verbal {
+    background: var(--green-teal-transparent); /* Transparent green teal background */
+}
+
+/* Style for the verbal text color */
+.verbal {
+    color: var(--green-teal); /* Green teal text color */
+}
+
+/* Style for the visual card background color */
+.card_visual {
+    background: var(--cobalt-blue-transparent); /* Transparent cobalt blue background */
+}
+
+/* Style for the visual text color */
+.visual {
+    color: var(--cobalt-blue); /* Cobalt blue text color */
+}
+
+/* Style for the button */
+#btn {
+    margin: 0 2rem; /* Horizontal margins */
+    width: 85%; /* Width */
+    padding: 1.3rem; /* Padding */
+    border: none; /* Remove border */
+    font-size: 1.4rem; /* Font size */
+    color: var(--white); /* White text color */
+    background: var(--dark-gray-blue); /* Dark gray blue background */
+    border-radius: 5rem; /* Rounded corners */
+}
+
+/* Hover effect for the button */
+#btn:hover {
+    background-color: var(--light-royal-blue-background); /* Change background color on hover */
+}
+
+/* Style for attribution text */
+.attribution { 
+    margin-top: 2rem; /* Top margin */
+    font-size: 11px; /* Font size */
+    text-align: center; /* Center text */
+    font-weight: 800; /* Bold text */
+}
+
+/* Style for attribution links */
+.attribution a { 
+    color: hsl(228, 45%, 44%); /* Link color */
+}
+
+/* Media query for screens wider than 600px */
+@media (min-width: 600px) {
+    #btn {
+        width: 90%; /* Increase button width */
+    }
+}
+
+/* Media query for screens wider than 800px */
+@media (min-width: 800px) {
+    .entire-page {
+        display: flex; /* Flexbox layout */
+        flex-direction: column; /* Column layout */
+        justify-content: center; /* Center content vertically */
+        align-items: center; /* Center content horizontally */
+    }
+    .card-container {
+        width: 50rem; /* Fixed width */
+        min-height: unset; /* Unset minimum height */
+        height: 30rem; /* Fixed height */
+        display: flex; /* Flexbox layout */
+        box-shadow: 0px 0px 6px rgb(90, 87, 87); /* Box shadow */
+        border-radius: 
+
+1.3rem; /* Rounded corners */
+    }
+
+    .card-1 {
+        width: 50%; /* Half the width */
+        height: 100%; /* Full height */
+        border-radius: 1.3rem 0 0 1.3rem; /* Rounded left corners */
+    }
+
+    .card-2 {
+        margin-top: unset; /* Remove top margin */
+        width: 50%; /* Half the width */
+        height: 100%; /* Full height */
+        border-radius: 0 1.3rem 1.3rem 0; /* Rounded right corners */
+    }
+    
+    .circle {
+        width: 13rem; /* Larger width */
+        height: 13rem; /* Larger height */
+    }
+
+    .result {
+        font-size: 4rem; /* Larger font size */
+    }
+
+    .remark-details {
+        margin: 2rem 3rem 0 3rem; /* Larger margins */
+    }
+
+    .summary {
+        margin-top: 1.7rem; /* Top margin */
+        margin-bottom: 3rem; /* Bottom margin */
+    }
+
+    #btn {
+        width: 83%; /* Button width */
+    }
+}
