@@ -38,8 +38,8 @@ Mobile View
 ![](./assets/images/iPhone-13-PRO-127.0.0.1%20(1).png)
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [My Solution](https://github.com/BANKOLEDO/results-summary-component)
+- Live Site URL: [Page Preview](https://bankoledo.github.io/results-summary-component/)
 
 ## My process
 
